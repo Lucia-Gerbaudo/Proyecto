@@ -116,10 +116,16 @@ body {
         display: flex;
         justify-content: space-around;
         padding: 1rem;
-        
+       
     }
-    
+ 
 
+
+    .imgCard:hover {
+        transform: scale(2);
+        transition-property: all ;
+        transition-duration: 2s;
+    }  
     
     .subtitulo {
         grid-area: subti;
