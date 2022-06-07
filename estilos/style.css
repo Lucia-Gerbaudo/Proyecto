@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Fascinate+Inline&family=Fuggles&family=Gochi+Hand&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&family=Rock+Salt&family=Sacramento&family=Skranji:wght@400;700&display=swap');
+
+
+/*desktop*/
+
+
+html {
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+  
+/* grids*/ 
+    
+     #todo {
+        width: 100%;
+       
+        display: grid;
+        gap: 0;
+        align-self: center;
+        justify-self: center;
+        grid-template-areas:    "header header header"
+                                "publi contenido contenido"
+                                "publi contenido contenido"
+                                "footer footer footer";
+     
+          
+          
+        grid-template-columns: 10rem auto auto;
+        grid-template-rows: auto  auto auto auto;                       
+    
+        }
+    
+    .logo {
+        width: auto;
+        height: auto;
+        padding: 1rem 1rem 1rem 5rem;
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .header {
+        grid-area: header;
+        background-color: #fffbd5;       
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 10rem;
+        }
+    
+    nav ul li {
+            list-style-type: none;
+        }
+        
+    .nav{
+       padding: 0 0 0 20rem;
+    }
+    a {
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 2rem;
+            font-family: 'Comfortaa', cursive;
+            color: #f2a0ce;
+            font-size: small;
+            font-weight: bold;
+        }
+    
+    
+    
+    .contenido {
+        grid-area: contenido;
+        background-color: white;
+        margin: 0 0 0 0;
+        width: 100%;
+        height: auto;
+    
+       
+    }
+    
+    main div div figure img {
+        height: 10rem;
+        width: 10rem;
+    }
+    
+    main figure img {
+    height: 25rem;
+    width: 25rem;
+    
+    }
+    
+    .nav {
+        display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            width: 100%;
+        
+    }
+    
+    .imgMuestra {
+        grid-area: muestra;
+        background-color: white;
+        width: auto;
+    } 
+
+    .imgTarjeta {
+        display: flex;
+        justify-content: space-around;
+        padding: 1rem;
+        
+    }
+    
+
+    
+    .subtitulo {
+        grid-area: subti;
+        background-color: white;
+        color: dimgray;
+        width: 100%;
+        height: 5rem;     
+        display: flex;
+        flex-direction: row;
+      align-items: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
+      justify-content: flex-start;
+     
+    }
+
+    button{
+        padding: 5px 8px 5px 8px;
+        border-radius: 1rem;
+        border: 1px solid #f29f04;
+        background-color: #f29f04;
+        color:white;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: small;
+       
+    }
+
+     .fa-truck{
+         font-size: medium;
+         padding-left:20rem;
+     }
+
+     .fa-credit-card{
+        font-size: medium;
+        padding-left:20rem;
+     }
+    .subti{
+  border-right: solid 1px black;
+        padding-right: 18rem;
+        padding-left: 1rem;
+  
+    }
+    .subti2{
+      padding-left: 1rem;
+        padding-right: 10rem ;
+    }
+    
+    
+    .cards {
+    
+        grid-area: cards;
+        background-color:#f2a0ce;
+       padding: 2rem;
+        height: auto;
+        display: grid;
+        grid-template-columns:repeat(4, 1fr) ;
+        font-family: 'Poppins', sans-serif;
+        
+        
+        
+    
+    }
+    .card {
+        width: 20rem;
+        height: 18rem;
+        background-color:aqua;
+        border: 1px solid black;
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .card p {
+        font-size: small;
+    }
+    .card h2{
+        font-weight:normal;
+    }
+    
+    
+    .publicidad{
+        grid-area: publi;
+        width: auto;
+        height: auto;
+        background-color: aqua;
+    }
+    
+    
+    
+    
+    footer {
+        grid-area: footer;
+        background-color:#fffbd5 ;
+        justify-self: center;
+        text-align: center;
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Poppins', sans-serif;
+        font-size: small;
+        
+    }
+    
+    .redesFooter{
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+    }
+      
+
+/* Mobile */
+
+@media (max-width: 768px){
+    #todo {
+        width: 100%;
+       
+        display: grid;
+        gap: 0;
+        align-self: center;
+        flex-wrap: nowrap;
+        justify-self: center;
+        grid-template-areas:    "header "
+                                "contenido "
+                                "publi "
+                                "footer ";
+     
+          
+          
+        grid-template-columns: 100%;
+        grid-template-rows: auto  auto auto auto;                       
+    
+        font-size: 2rem;
+        }
+        .cards {
+            grid-area: cards;
+            background-color: white;
+            margin: 2rem;
+            padding: 2rem;
+            width: 100rem;
+            height: 30rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        
+        }
+        .subtitulo {
+            grid-area: subti;
+            background-color: yellow;
+            font-size:x-small;
+            width: 100%;
+            height: 5rem;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+           
+        }     
+        .imgMuestra {
+            font-size: x-small;
+            width: auto;       
+        } 
+  
+}
+
+/* Tablet */
+
+@media (min-width: 769px) 
+and (max-width: 1023px) {
+    #todo {
+        width: 100%;
+       
+        display: grid;
+        flex-wrap: nowrap;
+        gap: 0;
+        align-self: center;
+        justify-self: center;
+        grid-template-areas:    "header header"
+                                "publi contenido"
+                                "publi contenido"
+                                "footer footer";
+     
+          
+          
+        grid-template-columns: 10rem auto ;
+        grid-template-rows: auto  auto auto auto;                       
+    
+        font-size: 2rem;
+        }
+
+        main figure img {
+            height: 15rem;
+            width: 15rem;
+            }
+
+            .cards {
+                grid-area: cards;
+                background-color: white;
+                margin: 2rem;
+                padding: 2rem;
+                width: 100rem;
+                height: 30rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-wrap: nowrap;
+                
+            
+            }
+            .subtitulo {
+                grid-area: subti;
+                background-color: yellow;
+                font-size:x-small;
+                width: 100%;
+                height: 5rem;
+                
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+              align-items: center;
+              flex-wrap: nowrap;
+               
+            }     
+            .imgMuestra {
+                font-size: x-small;
+                width: auto;       
+            } 
+
+}
