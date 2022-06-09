@@ -3,11 +3,11 @@
 
 /*desktop*/
 
-
+/*
 html {
     font-size: 62.5%;
 }
-
+*/
 * {
     margin: 0;
     padding: 0;
@@ -18,9 +18,54 @@ body {
     color: black;
 }
   
+
+.colorNav{
+    background-color: #fffbd5;
+}
+
+footer {
+    grid-area: footer;
+    background-color:#fffbd5 ;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: x-small;
+    
+}
+.subtitulo {
+
+    background-color: white;
+    color: dimgray;
+    width: 100;
+    height: 5rem;     
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5px;
+  font-weight: lighter;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  justify-content:space-between;
+ 
+}
+.fa-truck{
+    font-size: medium;
+    padding-left:20rem;
+}
+
+.fa-credit-card{
+   font-size: medium;
+   padding-left:20rem;
+}
+
+
 /* grids*/ 
     
-     #todo {
+   /*  #todo {
         width: 100%;
        
         display: grid;
@@ -127,22 +172,7 @@ body {
         transition-duration: 2s;
     }  
     
-    .subtitulo {
-        grid-area: subti;
-        background-color: white;
-        color: dimgray;
-        width: 100%;
-        height: 5rem;     
-        display: flex;
-        flex-direction: row;
-      align-items: center;
-      font-family: 'Poppins', sans-serif;
-      font-size: 1rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-      justify-content: flex-start;
-     
-    }
+   
 
     button{
         padding: 5px 8px 5px 8px;
@@ -241,7 +271,7 @@ body {
       
 
 /* Mobile */
-
+/*
 @media (max-width: 768px){
     #todo {
         width: 100%;
@@ -297,9 +327,9 @@ body {
         } 
   
 }
-
+*/
 /* Tablet */
-
+/*
 @media (min-width: 769px) 
 and (max-width: 1023px) {
     #todo {
@@ -361,4 +391,4 @@ and (max-width: 1023px) {
                 width: auto;       
             } 
 
-}
+}*/
