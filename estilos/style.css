@@ -16,8 +16,11 @@ html {
 body {
     background-color: white;
     color: black;
+    
 }
-  
+
+
+
 
 .colorNav{
     background-color: #fffbd5;
@@ -42,6 +45,19 @@ color: dimgray;
     font-size: x-large;
 }
 
+.comoComprar{
+    padding: 2%;
+    color: dimgray;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif;  
+}
+
+.comoComprar h2{
+    padding-top: 1%;
+    color: #f2a0ce;
+    font-size: medium;
+    font-family: 'Poppins', sans-serif; 
+}
 .formEdicion h2{
     padding-top: 1%;
     color: #f2a0ce;
@@ -118,6 +134,8 @@ footer {
           padding-right: 10rem ;
       }
 
+    
+     
 /* grids*/ 
     
    /*  #todo {
@@ -325,8 +343,8 @@ footer {
     }
       
 
-/* Mobile */
-/*
+/* Mobile 
+
 @media (max-width: 768px){
     #todo {
         width: 100%;
@@ -348,6 +366,7 @@ footer {
     
         font-size: 2rem;
         }
+        
         .cards {
             grid-area: cards;
             background-color: white;
@@ -382,9 +401,9 @@ footer {
         } 
   
 }
-*/
-/* Tablet */
-/*
+
+tablet
+
 @media (min-width: 769px) 
 and (max-width: 1023px) {
     #todo {
@@ -446,4 +465,4 @@ and (max-width: 1023px) {
                 width: auto;       
             } 
 
-}*/
+} */ 
