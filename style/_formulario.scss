@@ -1,0 +1,23 @@
+.mainForm{
+    margin: 5%;
+}
+.titForm{
+color: $colortexto;
+    font-size: x-large;
+    font-size: $tamañotexto;
+    font-family: $tipografia;
+}
+
+.formEdicion{
+    h2{
+      padding-top: 1%;
+      color: $colortitulo;
+      font-size: $tamañotitulo;
+      font-family: $tipografia;
+     }
+    p{
+      font-size: medium;
+      font-family: $tipografia;
+     color: $colortexto;
+     }
+}

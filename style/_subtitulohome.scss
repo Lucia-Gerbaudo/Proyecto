@@ -1,0 +1,37 @@
+.subtitulo {
+
+    background-color: white;
+    color: $colortexto;
+    width: 100%;
+    height: 5rem;     
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  font-family: $tipografia;
+  font-size: $tamañotexto;
+  font-weight: lighter;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  justify-content:space-between;
+  .subti{
+          border-right: solid 1px black;
+          padding-right: 18rem;
+          padding-left: 1rem;
+    
+      }
+   .subti2{
+          padding-left: 1rem;
+          padding-right: 10rem ;
+      }
+ 
+}
+
+.fa-truck{
+    font-size: medium;
+    padding-left:2rem;
+}
+
+.fa-credit-card{
+   font-size: medium;
+   padding-left:2rem;
+}
