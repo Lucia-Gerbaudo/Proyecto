@@ -14,38 +14,50 @@
 <body>
     
     <header>
-        <nav class="navbar navbar-expand-lg  colorNav">
-            <div class="container-fluid d-flex">
-              <a class="navbar-brand" href="#">
-                <img src="../img/Logo MYO-04.png" alt="">
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse d-flex justify-content-end w-100" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../secciones/productos.html">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../secciones/nosotros.html">Nosotros</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../secciones/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../secciones/comoComprar.html">Como comprar</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../secciones/Formulario.html">Formulario de datos para edición</a>
-                  </li>
+      <nav class="navbar navbar-expand-lg navbar-light colorNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../img/Logo MYO-04.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../secciones/nenas.html">Nena</a></li>
+                  <li><a class="dropdown-item" href="../secciones/nenes.html">Varon</a></li>
+                  <li><a class="dropdown-item" href="../secciones/unisex.html">Unisex</a></li>
+                  <li><a class="dropdown-item" href="../secciones/laminas.html">Láminas NewBorn</a></li>
                 </ul>
-              </div>
-            </div>
-          </nav>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../secciones/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../secciones/comoComprar.html">Cómo comprar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../secciones/Formulario.html">Formulario de datos para edición</a>
+              </li>
+             
+            </ul>
+          </div>
+          <form class="d-flex">
+            <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+  
  
     </header>
 

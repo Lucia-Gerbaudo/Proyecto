@@ -20,37 +20,47 @@
 
 
     <header class="header">
-      <nav class="navbar navbar-expand-lg   colorNav">
-        <div class="container-fluid d-flex w-100 ">
-          <a class="navbar-brand" href="#">
-            <img src="./img/Logo MYO-04.png" alt="">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light colorNav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/Logo MYO-04.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end w-100" id="navbarNav">
-            <ul class="navbar-nav ">
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active " aria-current="page" href="#">Inicio</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./secciones/nenas.html">Nena</a></li>
+                  <li><a class="dropdown-item" href="./secciones/nenes.html">Varon</a></li>
+                  <li><a class="dropdown-item" href="./secciones/unisex.html">Unisex</a></li>
+                  <li><a class="dropdown-item" href="./secciones/laminas.html">Láminas NewBorn</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./secciones/productos.html">Productos</a>
+                <a class="nav-link" href="./secciones/nosotros.html">Nosotros</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./secciones/nosotros.html">Nosotros</a>
+                <a class="nav-link" href="./secciones/contacto.html">Contacto</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
+                <a class="nav-link" href="./secciones/comoComprar.html">Cómo comprar</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="./secciones/comoComprar.html">Como comprar</a>
+                <a class="nav-link" href="./secciones/Formulario.html">Formulario de datos para edición</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="./secciones/Formulario.html">Formulario de datos para edición</a>
-              </li>
+             
             </ul>
           </div>
+          <form class="d-flex">
+            <input class="form-control me-2 " type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success " type="submit">Buscar</button>
+          </form>
         </div>
       </nav>
 
@@ -61,7 +71,7 @@
       <section>
 
         <div class="d-flex justify-content-center">
-          <div id="carouselExampleIndicators" class="carousel slide w-50" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                 aria-current="true" aria-label="Slide 1"></button>
@@ -72,13 +82,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="./img/invitacion chica-01.jpg" class="d-block w-100" alt="...">
+                <img src="./img/carrousel--01.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item ">
-                <img src="./img/banderin chico-01.jpg" class="d-block w-100" alt="...">
+                <img src="./img/carrousel--03.jpg" class="d-block w-100" alt="...">
               </div>
               <div class="carousel-item ">
-                <img src="./img/cartel bienvenida chico-01.jpg" class="d-block w-100" alt="...">
+                <img src="./img/carrousel--02.jpg" class="d-block w-100" alt="...">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -115,23 +125,20 @@
         <div class="row">
 
 
-          <div class="col-lg-2 col-md-12 col-sm-12 nav-productos">
+          <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 nav-productos">
             <ul class="nav flex-column ">
               <h3 class="cat-princ"> Categorias principales</h3>
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Nenas</a>
+                <a class="nav-link active" aria-current="page" href="./secciones/nenas.html">Nenas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Nenes</a>
+                <a class="nav-link" href="./secciones/nenes.html">Nenes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Unisex</a>
+                <a class="nav-link" href="./secciones/unisex.html">Unisex</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active">Invitaciones digitales</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active">Láminas New Born</a>
+                <a class="nav-link " href="./secciones/laminas.html">Láminas New Born</a>
               </li>
             </ul>
           </div>
@@ -140,32 +147,32 @@
 
 
 
-          <div class="col-lg-10 col-md-10 col-sm-12">
+          <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12">
             <section class="conteiner row">
               <div class="d-flex justify-content-around row col-sm-12 ">
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12 " style="width: 15rem;">
+                  <img src="./img/nena.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Conejita bailarina</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12" style="width: 15rem;">
+                  <img src="./img/nene.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Dinosaurio</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12" style="width: 15rem;">
+                  <img src="./img/unisex.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Animales de la selva</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
@@ -175,28 +182,28 @@
 
               <div class="d-flex justify-content-around row ">
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12" style="width: 15rem;">
+                  <img src="./img/nena.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Conejita bailarina</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12" style="width: 15rem;">
+                  <img src="./img/nene.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Dinosaurios</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
                 </div>
 
-                <div class="card col m-5 col-md-4 col-sm-12 " style="width: 15rem;">
-                  <img src="./img/posteo dinosaurio_Mesa de trabajo 1.jpg" class="card-img-top w-55" alt="...">
+                <div class="card col-m-5 col-md-4 col-sm-12 col-xs-12" style="width: 15rem;">
+                  <img src="./img/unisex.jpg" class="card-img-top w-55" alt="...">
                   <div class="card-body">
-                    <h5 class="card-title titCard">Kit imprimible Dino</h5>
+                    <h5 class="card-title titCard">Kit imprimible Animales de la selva</h5>
                     <p class="card-text textCard">$500</p>
                     <a href="#" class="btn btn-primary">Comprar</a>
                   </div>
