@@ -13,16 +13,33 @@
   padding-left: 1rem;
   padding-right: 1rem;
   justify-content:space-between;
-  .subti{
-          border-right: solid 1px black;
-          padding-right: 18rem;
-          padding-left: 1rem;
-    
-      }
-   .subti2{
-          padding-left: 1rem;
-          padding-right: 10rem ;
-      }
+ 
+   .pago{
+    display: flex;
+        flex-direction: row;
+        margin: 0;
+        
+       
+        .subti2{
+            font-size: medium;
+                  padding-left: 1rem;
+                  padding-right: 10rem ;
+              }
+    }
+    .envio{
+        display: flex;
+            flex-direction: row;
+            margin: 0;
+   
+            
+            .subti{
+                font-size: medium;
+                     
+                    
+                
+                  }
+        }
+   
  
 }
 
@@ -34,4 +51,55 @@
 .fa-credit-card{
    font-size: medium;
    padding-left:2rem;
+}
+
+@media (max-width: 768px){
+    .subtitulo {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    
+    .envio{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+    .pago{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    .subti{
+        border-right: none;
+       font-size: small;
+        padding:0;
+        margin:0;
+
+  
+    }
+ .subti2{
+    font-size:medium;
+        padding:0;
+        margin: 0;
+    }
+
+    .fa-truck{
+        font-size: medium;
+        padding-left:0
+        
+    }
+    
+    .fa-credit-card{
+       font-size: small;
+       padding-left:0
+      
+    }
 }

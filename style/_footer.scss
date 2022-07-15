@@ -8,5 +8,39 @@ footer {
     align-items: center;
     font-family: $tipografia;
     font-size: $tamañotexto;
-    
+    margin-top: 10px;
+}
+
+.contacto_footer{
+    display: flex;
+    flex-direction: column;
+    font-size: x-small;
+}
+
+.fa-cc-visa{
+    font-size: x-large;
+}
+.fa-cc-mastercard{
+    font-size: x-large;
+}
+.fa-cc-amex{
+    font-size: x-large;
+}
+.fa-facebook{
+    font-size: x-large;
+}
+.fa-instagram{
+    font-size: x-large;
+}
+.fa-pinterest{
+    font-size: x-large;
+}
+
+@media (max-width: 768px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 30rem;
+        align-items: center;
+    }
 }

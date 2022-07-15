@@ -81,6 +81,10 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+.mainNosotros {
+  height: 100vh;
+}
+
 footer {
   color: dimgray;
   background-color: #fffbd5;
@@ -91,8 +95,47 @@ footer {
   align-items: center;
   font-family: "Quicksand", sans-serif;
   font-size: 1rem;
+  margin-top: 10px;
 }
 
+.contacto_footer {
+  display: flex;
+  flex-direction: column;
+  font-size: x-small;
+}
+
+.fa-cc-visa {
+  font-size: x-large;
+}
+
+.fa-cc-mastercard {
+  font-size: x-large;
+}
+
+.fa-cc-amex {
+  font-size: x-large;
+}
+
+.fa-facebook {
+  font-size: x-large;
+}
+
+.fa-instagram {
+  font-size: x-large;
+}
+
+.fa-pinterest {
+  font-size: x-large;
+}
+
+@media (max-width: 768px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    align-items: center;
+  }
+}
 .subtitulo {
   background-color: white;
   color: dimgray;
@@ -108,14 +151,23 @@ footer {
   padding-right: 1rem;
   justify-content: space-between;
 }
-.subtitulo .subti {
-  border-right: solid 1px black;
-  padding-right: 18rem;
-  padding-left: 1rem;
+.subtitulo .pago {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
 }
-.subtitulo .subti2 {
+.subtitulo .pago .subti2 {
+  font-size: medium;
   padding-left: 1rem;
   padding-right: 10rem;
+}
+.subtitulo .envio {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.subtitulo .envio .subti {
+  font-size: medium;
 }
 
 .fa-truck {
@@ -128,6 +180,47 @@ footer {
   padding-left: 2rem;
 }
 
+@media (max-width: 768px) {
+  .subtitulo {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+  }
+  .envio {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .pago {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+  }
+  .subti {
+    border-right: none;
+    font-size: small;
+    padding: 0;
+    margin: 0;
+  }
+  .subti2 {
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+  }
+  .fa-truck {
+    font-size: medium;
+    padding-left: 0;
+  }
+  .fa-credit-card {
+    font-size: small;
+    padding-left: 0;
+  }
+}
 .titCard {
   color: #f2a0ce;
   font-size: 1.2rem;
@@ -138,44 +231,9 @@ footer {
   color: dimgray;
 }
 
-/*mapa*/
-.btn--twitter {
-  background-color: #55aCee;
-  width: 6rem;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-  width: 6rem;
-}
-
-.btn--instagram {
-  background-color: #C25E30;
-  width: 6rem;
-}
-
-.btn--twitter {
-  background-color: #55aCee;
-}
-
-.btn--facebook {
-  background-color: #3a5795;
-}
-
-.btn--instagram {
-  background-color: #C25E30;
-}
-
-/*desktop*/
-/*
-html {
-    font-size: 62.5%;
-}
-*/
-.cardsNene {
-  width: 15rem;
-  text-align: center;
-  justify-content: center;
+.margin {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .tamañoCards {
@@ -183,336 +241,20 @@ html {
   margin-left: 50px;
 }
 
-.mainNosotros {
-  height: 100vh;
+.cardsNene {
+  width: 15rem;
+  text-align: center;
+  justify-content: center;
 }
 
-/* grids*/
-/*  #todo {
-        width: 100%;
-
-        display: grid;
-        gap: 0;
-        align-self: center;
-        justify-self: center;
-        grid-template-areas:    "header header header"
-                                "publi contenido contenido"
-                                "publi contenido contenido"
-                                "footer footer footer";
-
-
-
-        grid-template-columns: 10rem auto auto;
-        grid-template-rows: auto  auto auto auto;                       
-
-        }
-
-    .logo {
-        width: auto;
-        height: auto;
-        padding: 1rem 1rem 1rem 5rem;
-        margin: 1rem;
-        text-align: center;
-    }
-
-    .header {
-        grid-area: header;
-        background-color: #fffbd5;       
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            height: 10rem;
-        }
-
-    nav ul li {
-            list-style-type: none;
-        }
-
-    .nav{
-       padding: 0 0 0 20rem;
-    }
-    a {
-            text-decoration: none;
-            cursor: pointer;
-            font-size: 2rem;
-            font-family: 'Comfortaa', cursive;
-            color: #f2a0ce;
-            font-size: small;
-            font-weight: bold;
-        }
-
-
-
-    .contenido {
-        grid-area: contenido;
-        background-color: white;
-        margin: 0 0 0 0;
-        width: 100%;
-        height: auto;
-
-
-    }
-
-    main div div figure img {
-        height: 10rem;
-        width: 10rem;
-    }
-
-    main figure img {
-    height: 25rem;
-    width: 25rem;
-
-    }
-
-    .nav {
-        display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            width: 100%;
-
-    }
-
-    .imgMuestra {
-        grid-area: muestra;
-        background-color: white;
-        width: auto;
-    } 
-
-    .imgTarjeta {
-        display: flex;
-        justify-content: space-around;
-        padding: 1rem;
-
-    }
-
-
-
-    .imgCard:hover {
-        transform: scale(2);
-        transition-property: all ;
-        transition-duration: 2s;
-    }  
-
-
-
-    button{
-        padding: 5px 8px 5px 8px;
-        border-radius: 1rem;
-        border: 1px solid #f29f04;
-        background-color: #f29f04;
-        color:white;
-        cursor: pointer;
-        font-weight: 300;
-        font-size: small;
-
-    }
-
-     .fa-truck{
-         font-size: medium;
-         padding-left:20rem;
-     }
-
-     .fa-credit-card{
-        font-size: medium;
-        padding-left:20rem;
-     }
-    .subti{
-  border-right: solid 1px black;
-        padding-right: 18rem;
-        padding-left: 1rem;
-
-    }
-    .subti2{
-      padding-left: 1rem;
-        padding-right: 10rem ;
-    }
-
-
-    .cards {
-
-        grid-area: cards;
-        background-color:#f2a0ce;
-       padding: 2rem;
-        height: auto;
-        display: grid;
-        grid-template-columns:repeat(4, 1fr) ;
-        font-family: 'Poppins', sans-serif;
-
-
-
-
-    }
-    .card {
-        width: 20rem;
-        height: 18rem;
-        background-color:aqua;
-        border: 1px solid black;
-        text-align: center;
-        margin: 1rem;
-    }
-
-    .card p {
-        font-size: small;
-    }
-    .card h2{
-        font-weight:normal;
-    }
-
-
-    .publicidad{
-        grid-area: publi;
-        width: auto;
-        height: auto;
-        background-color: aqua;
-    }
-
-
-
-
-    footer {
-        grid-area: footer;
-        background-color:#fffbd5 ;
-        justify-self: center;
-        text-align: center;
-        width: 100%;
-        height: 10rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        font-family: 'Poppins', sans-serif;
-        font-size: small;
-
-    }
-
-    .redesFooter{
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-    }
-
-
-/* Mobile 
-
-@media (max-width: 768px){
-    #todo {
-        width: 100%;
-
-        display: grid;
-        gap: 0;
-        align-self: center;
-        flex-wrap: nowrap;
-        justify-self: center;
-        grid-template-areas:    "header "
-                                "contenido "
-                                "publi "
-                                "footer ";
-
-
-
-        grid-template-columns: 100%;
-        grid-template-rows: auto  auto auto auto;                       
-
-        font-size: 2rem;
-        }
-
-        .cards {
-            grid-area: cards;
-            background-color: white;
-            margin: 2rem;
-            padding: 2rem;
-            width: 100rem;
-            height: 30rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            flex-wrap: wrap;
-
-
-        }
-        .subtitulo {
-            grid-area: subti;
-            background-color: yellow;
-            font-size:x-small;
-            width: 100%;
-            height: 5rem;
-
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-          align-items: center;
-          flex-wrap: wrap;
-
-        }     
-        .imgMuestra {
-            font-size: x-small;
-            width: auto;       
-        } 
-
+.btn--twitter {
+  background-color: #55aCee;
 }
 
-tablet
+.btn--facebook {
+  background-color: #3a5795;
+}
 
-@media (min-width: 769px) 
-and (max-width: 1023px) {
-    #todo {
-        width: 100%;
-
-        display: grid;
-        flex-wrap: nowrap;
-        gap: 0;
-        align-self: center;
-        justify-self: center;
-        grid-template-areas:    "header header"
-                                "publi contenido"
-                                "publi contenido"
-                                "footer footer";
-
-
-
-        grid-template-columns: 10rem auto ;
-        grid-template-rows: auto  auto auto auto;                       
-
-        font-size: 2rem;
-        }
-
-        main figure img {
-            height: 15rem;
-            width: 15rem;
-            }
-
-            .cards {
-                grid-area: cards;
-                background-color: white;
-                margin: 2rem;
-                padding: 2rem;
-                width: 100rem;
-                height: 30rem;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                flex-wrap: nowrap;
-
-
-            }
-            .subtitulo {
-                grid-area: subti;
-                background-color: yellow;
-                font-size:x-small;
-                width: 100%;
-                height: 5rem;
-
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-              align-items: center;
-              flex-wrap: nowrap;
-
-            }     
-            .imgMuestra {
-                font-size: x-small;
-                width: auto;       
-            } 
-
-} *//*# sourceMappingURL=style.css.map */
+.btn--instagram {
+  background-color: #C25E30;
+}/*# sourceMappingURL=style.css.map */
